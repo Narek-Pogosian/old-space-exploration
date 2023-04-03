@@ -1,0 +1,100 @@
+@use "../abstracts/" as *;
+
+.crew-page {
+  min-height: 100%;
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-color: rgb(162, 162, 162);
+  background-blend-mode: multiply;
+
+  @include md {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+
+  @include lg {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+}
+
+.crew-main {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+
+  @include md {
+    flex-direction: column-reverse;
+  }
+
+  @include lg {
+    flex-direction: row-reverse;
+    padding-inline: 0;
+  }
+
+  img {
+    height: 223px;
+
+    @include md {
+      height: 500px;
+    }
+  }
+
+  & > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 1px solid $idle;
+
+    @include lg {
+      flex: 1;
+    }
+  }
+
+  & > div:last-of-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+    @include md {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include lg {
+      text-align: left;
+      align-items: start;
+      padding-left: 8rem;
+    }
+  }
+}
+
+.crew-title {
+  color: $hover;
+  text-transform: uppercase;
+  @include md {
+    font-size: 26px;
+  }
+}
+
+.crew-name {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 2rem 0 3rem 0;
+
+  @include md {
+    font-size: 40px;
+  }
+
+  @include lg {
+    font-size: 56px;
+  }
+}
+
+.crew-description {
+  color: $lightBlue;
+  max-width: 400px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" type="module" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="destination-page page">
+      <header>
+        <div class="container">
+          <a href="../index.html"
+            ><img src="../assets/shared/logo.svg" alt="logo"
+          /></a>
+          <button
+            id="open-menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img src="../assets/shared/icon-hamburger.svg" alt="" />
+          </button>
+          <nav id="primary-navigation">
+            <div class="close-btn-wrapper container">
+              <button
+                id="close-menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+              >
+                <img src="../assets/shared/icon-close.svg" alt="" />
+              </button>
+            </div>
+            <ul>
+              <li>
+                <a href="../index.html"
+                  ><span class="link-number">00</span> Home</a
+                >
+              </li>
+              <li class="active">
+                <a href="#"><span class="link-number">01</span> Destination</a>
+              </li>
+              <li>
+                <a href="./crew.html"
+                  ><span class="link-number">02</span> Crew</a
+                >
+              </li>
+              <li>
+                <a href="./technology.html"
+                  ><span class="link-number">03</span> Technology</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h5 class="page-title"><span>01</span> Pick your destination</h5>
+      <main class="destination-main">
+        <div class="destination-content">
+          <div class="destination-img-wrapper">
+            <img src="" alt="" id="destination-img" />
+          </div>
+          <div class="destination-text">
+            <div class="destination-tab-buttons">
+              <button class="destination-tab-button active">Moon</button>
+              <button class="destination-tab-button">Mars</button>
+              <button class="destination-tab-button">Europe</button>
+              <button class="destination-tab-button">Titan</button>
+            </div>
+            <div class="destination-text">
+              <h2 id="destination-title"></h2>
+              <p
+                id="destination-description"
+                class="destination-description"
+              ></p>
+              <div class="destination-info">
+                <div>
+                  <p>Avg. distance</p>
+                  <p id="destination-distance"></p>
+                </div>
+                <div>
+                  <p>Est. travel time</p>
+                  <p id="destination-time"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

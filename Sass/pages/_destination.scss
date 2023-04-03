@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+.destination-page {
+  min-height: 100%;
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+
+  @include md {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+
+  @include lg {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  }
+}
+
+.destination-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    padding: 4rem;
+  }
+
+  @include lg {
+    flex-direction: row;
+    padding-block: 2rem;
+    justify-content: space-around;
+
+    & > div {
+      width: 445px;
+    }
+  }
+
+  .destination-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include md {
+      padding-block: 1rem;
+    }
+  }
+
+  img {
+    width: 170px;
+    height: 170px;
+
+    @include md {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include lg {
+      width: 420px;
+      height: 420px;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @include md {
+      font-size: 80px;
+    }
+
+    @include lg {
+      font-size: 100px;
+    }
+  }
+}
+
+.destination-text {
+  text-align: center;
+
+  @include lg {
+    text-align: left;
+  }
+}
+
+.destination-description {
+  color: $lightBlue;
+  margin-bottom: 3rem;
+}
+
+.destination-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include md {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include lg {
+    justify-content: start;
+    gap: 4rem;
+  }
+
+  div {
+    p {
+      text-transform: uppercase;
+    }
+    & p:first-child {
+      color: $lightBlue;
+    }
+    & p:last-child {
+      color: $white;
+      font-size: 28px;
+    }
+  }
+}

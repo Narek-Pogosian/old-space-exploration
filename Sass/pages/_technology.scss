@@ -1,0 +1,95 @@
+@use "../abstracts/" as *;
+
+.technology-page {
+  min-height: 100%;
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  background-size: cover;
+
+  @include md {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+
+  @include lg {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  }
+}
+
+.technology-main {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row-reverse;
+
+    & > div {
+      flex: 1;
+    }
+  }
+
+  & > div:first-of-type {
+    @include lg {
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  & > div:last-of-type {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include lg {
+      flex-direction: row;
+      padding-left: 8rem;
+      height: 400px;
+      align-items: start;
+      gap: 2rem;
+    }
+  }
+}
+
+.technology-img-desktop {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+.technology-img-mobile {
+  display: block;
+  width: 100%;
+
+  @include lg {
+    display: none;
+  }
+}
+
+.technology-text {
+  text-align: center;
+  max-width: 450px;
+
+  @include lg {
+    text-align: left;
+  }
+}
+
+.technology-terminology {
+  text-transform: uppercase;
+  color: $lightBlue;
+}
+
+.technology-name {
+  color: $white;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0.5rem 0 1.5rem 0;
+
+  @include md {
+    font-size: 40px;
+  }
+}
+
+.technology-description {
+  color: $lightBlue;
+}

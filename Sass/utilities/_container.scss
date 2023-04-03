@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.container {
+  width: 100%;
+  padding-inline: 1.5rem;
+
+  @include md {
+    padding-inline: 2rem;
+  }
+
+  @include lg {
+    padding-inline: 3rem;
+  }
+}

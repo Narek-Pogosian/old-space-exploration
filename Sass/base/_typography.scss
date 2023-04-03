@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", serif;
+}
+
+h1 {
+  font-size: 80px;
+
+  @include md {
+    font-size: 150px;
+  }
+}
+
+h5 {
+  letter-spacing: 4.75px;
+  font-size: 16px;
+
+  @include lg {
+    font-size: 28px;
+  }
+}
+
+p {
+  line-height: 28px;
+}

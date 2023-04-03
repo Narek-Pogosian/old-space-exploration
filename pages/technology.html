@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" type="module" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="technology-page page">
+      <header>
+        <div class="container">
+          <a href="../index.html"
+            ><img src="../assets/shared/logo.svg" alt="logo"
+          /></a>
+          <button
+            id="open-menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img src="../assets/shared/icon-hamburger.svg" alt="" />
+          </button>
+          <nav id="primary-navigation">
+            <div class="close-btn-wrapper container">
+              <button
+                id="close-menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+              >
+                <img src="../assets/shared/icon-close.svg" alt="" />
+              </button>
+            </div>
+            <ul>
+              <li>
+                <a href="../index.html"
+                  ><span class="link-number">00</span> Home</a
+                >
+              </li>
+              <li>
+                <a href="./destinations.html"
+                  ><span class="link-number">01</span> Destination</a
+                >
+              </li>
+              <li>
+                <a href="./crew.html"
+                  ><span class="link-number">02</span> Crew</a
+                >
+              </li>
+              <li class="active">
+                <a href="#"><span class="link-number">03</span> Technology</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h5 class="page-title"><span>03</span> Space launch 101</h5>
+      <main class="technology-main">
+        <div>
+          <img
+            src=""
+            alt=""
+            class="technology-img-mobile"
+            id="technology-img-mobile"
+          />
+          <img
+            src=""
+            alt=""
+            class="technology-img-desktop"
+            id="technology-img-desktop"
+          />
+        </div>
+        <div>
+          <div class="technology-tab-buttons">
+            <button class="technology-tab-button active">1</button>
+            <button class="technology-tab-button">2</button>
+            <button class="technology-tab-button">3</button>
+          </div>
+          <div class="technology-text">
+            <p class="technology-terminology">The terminology...</p>
+            <p id="technology-name" class="technology-name"></p>
+            <p id="technology-description" class="technology-description"></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
