@@ -2,15 +2,15 @@
 
 .destination-page {
   min-height: 100%;
-  background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
   background-size: cover;
 
   @include md {
-    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    background-image: url("./assets/destination/background-destination-tablet.jpg");
   }
 
   @include lg {
-    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
   }
 }
 

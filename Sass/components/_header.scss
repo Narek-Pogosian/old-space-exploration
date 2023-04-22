@@ -1,9 +1,7 @@
 @use "../abstracts/" as *;
 
-$header-padding: 1.5rem;
-
 header {
-  padding-block: $header-padding;
+  padding-block: 1.5rem;
 
   @include lg {
     padding-block: 3rem;

@@ -2,15 +2,15 @@
 
 .home-page {
   min-height: 100%;
-  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-image: url("./assets/home/background-home-mobile.jpg");
   background-size: cover;
 
   @include md {
-    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-image: url("./assets/home/background-home-tablet.jpg");
   }
 
   @include lg {
-    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-image: url("./assets/home/background-home-desktop.jpg");
   }
 }
 
