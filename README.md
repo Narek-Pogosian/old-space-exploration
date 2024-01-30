@@ -1,6 +1,6 @@
 # Space Exploration
 This is my solution to the Frontend Mentor challenge Space tourism.
-[Link to challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+<a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3" target="_blank">Link to challenge</a>
 
 ## How it was built
 This project is mostly styling and was done with Scss, the styling is written mobile first.
